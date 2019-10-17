@@ -79,4 +79,14 @@ public class StringCalculatorTest {
 		Assert.assertEquals(0, calTest.Add("//\n1$2$3$4@5"));
 	}
 	
+	@Test
+	public void assertIgnoreMorethan1KDelimitertInput() throws Exception {
+		Assert.assertEquals(2, calTest.Add("2,1002"));
+	}
+	
+	
+	@Test
+	public void assertTwoDigitIgnoreMorethan1KDelimitertInput() throws Exception {
+		Assert.assertEquals(5, calTest.Add("2,1002,3"));
+	}
 }

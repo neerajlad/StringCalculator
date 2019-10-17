@@ -6,7 +6,7 @@
       <class name="com.sevenShifts.test.StringCalculatorTest">
         <methods>
           <include name="intClassObject"/>
-          <include name="assertInvalidDelimitertInput"/>
+          <include name="assertTwoDigitIgnoreMorethan1KDelimitertInput"/>
         </methods>
       </class> <!-- com.sevenShifts.test.StringCalculatorTest -->
     </classes>
