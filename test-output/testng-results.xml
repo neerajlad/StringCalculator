@@ -2,56 +2,56 @@
 <testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+  <suite name="Default suite" duration-ms="54" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+    <test name="Default test" duration-ms="54" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
       <class name="com.sevenShifts.test.StringCalculatorTest">
-        <test-method status="PASS" signature="intClassObject()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="intClassObject" is-config="true" duration-ms="8" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="intClassObject()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="intClassObject" is-config="true" duration-ms="9" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intClassObject -->
-        <test-method status="PASS" signature="assertArbitraryDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertArbitraryDelimitertInput" duration-ms="6" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertArbitraryDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertArbitraryDelimitertInput" duration-ms="8" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertArbitraryDelimitertInput -->
-        <test-method status="PASS" signature="assertArbitraryMultipleDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertArbitraryMultipleDelimitertInput" duration-ms="2" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertArbitraryMultipleDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertArbitraryMultipleDelimitertInput" duration-ms="1" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertArbitraryMultipleDelimitertInput -->
-        <test-method status="PASS" signature="assertEmptyInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertEmptyInput" duration-ms="1" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertEmptyInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertEmptyInput" duration-ms="1" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertEmptyInput -->
-        <test-method status="PASS" signature="assertInvalidDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertInvalidDelimitertInput" duration-ms="2" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertInvalidDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertInvalidDelimitertInput" duration-ms="2" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertInvalidDelimitertInput -->
-        <test-method status="PASS" signature="assertMultipleDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertMultipleDelimitertInput" duration-ms="1" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertMultipleDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertMultipleDelimitertInput" duration-ms="1" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertMultipleDelimitertInput -->
-        <test-method status="PASS" signature="assertNegativeOneDigitInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertNegativeOneDigitInput" duration-ms="2" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertNegativeOneDigitInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertNegativeOneDigitInput" duration-ms="1" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertNegativeOneDigitInput -->
-        <test-method status="PASS" signature="assertNegativeOneTwoDigitInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertNegativeOneTwoDigitInput" duration-ms="1" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertNegativeOneTwoDigitInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertNegativeOneTwoDigitInput" duration-ms="1" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertNegativeOneTwoDigitInput -->
-        <test-method status="PASS" signature="assertPlusDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertPlusDelimitertInput" duration-ms="1" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertPlusDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertPlusDelimitertInput" duration-ms="1" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertPlusDelimitertInput -->
-        <test-method status="PASS" signature="assertSingleDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertSingleDelimitertInput" duration-ms="1" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertSingleDelimitertInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertSingleDelimitertInput" duration-ms="1" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertSingleDelimitertInput -->
-        <test-method status="PASS" signature="assertSingleDigitInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertSingleDigitInput" duration-ms="0" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertSingleDigitInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertSingleDigitInput" duration-ms="0" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertSingleDigitInput -->
-        <test-method status="PASS" signature="assertTwoDigitInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertTwoDigitInput" duration-ms="0" started-at="2019-10-17T14:57:38Z" finished-at="2019-10-17T14:57:38Z">
+        <test-method status="PASS" signature="assertTwoDigitInput()[pri:0, instance:com.sevenShifts.test.StringCalculatorTest@d2cc05a]" name="assertTwoDigitInput" duration-ms="0" started-at="2019-10-17T15:05:57Z" finished-at="2019-10-17T15:05:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertTwoDigitInput -->

@@ -3,26 +3,15 @@ package com.sevenShifts.test;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class StringCalculator {
-//	public static void main(String[] args) throws Exception {
-//		String strNumber = "//$\n1$2$3";
-////		System.out.println(AddWithPatternMatcher(strNumber));
-//		// System.out.println(Add_3("//$\n1$2$3"));
-//		System.out.println(Add_3("//$,@\n1$2@3"));
-//		System.out.println(Add_3("//$\n1$2$3"));
-//		System.out.println(Add_3("//$$$\n1$$$2$$$3"));
-//		System.out.println(Add_3("1,2,3"));
-//
-//	}
 
 	public int Add(String numbers) throws Exception {
 		int sum = 0;
 		if (numbers.isEmpty() || numbers == null) { // b. Empty strings should return 0.
 			return 0;
 		}
-		
-		if(numbers.length() == 1) {
+
+		if (numbers.length() == 1) {
 			return Integer.parseInt(numbers);
 		}
 
@@ -30,7 +19,7 @@ public class StringCalculator {
 
 		newDelimiter = extractDelimiter(numbers);
 
-		if (newDelimiter.equals(",")) {	// default delimiter 
+		if (newDelimiter.equals(",")) { // default delimiter
 			sum = calculateSumByDelimiter(numbers, ",");
 		} else {
 			sum = calculateSumByDelimiter(numbers, newDelimiter);
@@ -39,26 +28,17 @@ public class StringCalculator {
 	}
 
 	private String extractDelimiter(String numbers) {
-		int delCount = 0;
 
-		if(!numbers.startsWith("//")) {
+		if (!numbers.startsWith("//")) { // Without Delimiter
 			return ",";
 		}
-		
-		if (numbers.startsWith("//") & numbers.contains(",")) {	// check for custom delimiter
 
-			for (int j = 0; j < numbers.length(); j++) {	
-				if (numbers.charAt(j) == ',')
-					delCount++;
-			}
-			if (delCount != 1) {			
-				return ",";
-			} else {
-				String[] multiDel = numbers.split("\n");
-				return multiDel[0];
-			}
+		if (numbers.startsWith("//") & numbers.contains(",")) { // check for custom delimiter
+
+			String[] multiDel = numbers.split("\n"); // Multiple Delimiter
+			return multiDel[0];
 		} else {
-			String[] del = numbers.split("\n");
+			String[] del = numbers.split("\n"); // Single Arbitrary Delimiter
 			return del[0];
 		}
 	}
@@ -69,25 +49,28 @@ public class StringCalculator {
 		int currentNumber;
 		int index = 1;
 		String[] numArray = {};
-		if(delimiter.equals(",")) {
+		if (delimiter.equals(",")) {
 			numArray = numbers.split(",");
 			index = 0;
-		}else if (delimiter.length() > 1) {
+		} else if (delimiter.length() > 1) {
 			numbers = numbers.replaceAll("//", "");
-			
+
 			String[] mulDel = {};
-			if(delimiter.contains(",")) {
+			if (delimiter.contains(",")) {
 				index = 0;
 				mulDel = numbers.split("\n")[0].split(",");
-				numArray = numbers.split("\n")[1].split("[\\" + mulDel[0] +"|" + mulDel[1] + "]+"); // The numbers in the string are separated by a
-			}else {
+				numArray = numbers.split("\n")[1].split("[\\" + mulDel[0] + "|" + mulDel[1] + "]+"); // The numbers in
+																										// the string
+																										// are separated
+																										// by a
+			} else {
 				numbers = numbers.replaceAll("\n", "");
-				numArray = numbers.split("[\\" + delimiter + "]+"); // The numbers in the string are separated by a	
+				numArray = numbers.split("[\\" + delimiter + "]+"); // The numbers in the string are separated by a
 			}
 		} else {
 			numArray = numbers.split("\\" + delimiter); // The numbers in the string are separated by a delimiter.
 		}
-		
+
 		for (int i = index; i < numArray.length; i++) {
 			currentNumber = Integer.parseInt(numArray[i]);
 			if (currentNumber < 1) {
